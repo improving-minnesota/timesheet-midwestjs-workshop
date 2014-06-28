@@ -9,7 +9,7 @@ module.exports = function (grunt) {
     'modernizr/modernizr.js',
 
     // jQuery and Related
-    'jquery/jquery.js',
+    'jquery/dist/jquery.js',
     'select2/select2.js',
     'messenger/build/js/messenger.js',
 
@@ -270,7 +270,7 @@ module.exports = function (grunt) {
           }
         },
         files: {
-          '<%= assets %>/html/index.html': ['api/app/views/index.jade']
+          '<%= assets %>/html/index.html': ['api/src/views/index.jade']
         }
       },
       debug: {
@@ -282,7 +282,7 @@ module.exports = function (grunt) {
           }
         },
         files: {
-          '<%= assets %>/html/index.html': ['api/app/views/index.jade']
+          '<%= assets %>/html/index.html': ['api/src/views/index.jade']
         }
       },
       production: {
@@ -293,7 +293,7 @@ module.exports = function (grunt) {
           }
         },
         files: {
-          '<%= assets %>/html/index.html': ['api/app/views/index.jade']
+          '<%= assets %>/html/index.html': ['api/src/views/index.jade']
         }
       }
     },
