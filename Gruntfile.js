@@ -370,7 +370,7 @@ module.exports = function (grunt) {
           stdout: true,
           stderror: true
         },
-        command: 'node api/server.js'
+        command: 'nodemon api/server.js'
       }
     },
 
@@ -384,7 +384,6 @@ module.exports = function (grunt) {
 
   // *********************************************************************************************
   // New Tasks go below here !!! 
-
 
   });
 
