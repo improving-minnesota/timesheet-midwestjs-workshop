@@ -1,4 +1,4 @@
-html(class="no-js", ng-app="main")
+html(class="no-js")
   head
     base(href="/")
     title(ng-bind-template="Timesheetz") Timesheetz
@@ -12,7 +12,7 @@ html(class="no-js", ng-app="main")
     - else
       link(href="/assets/css/style.css", rel="stylesheet", type="text/css")
 
-  body(ng-controller="MainCtrl")
+  body()
     .tsz-page-container(ng-cloak)
       .navbar.navbar-default.navbar-static-top
         .container-fluid
@@ -24,6 +24,6 @@ html(class="no-js", ng-app="main")
       .container
         .row
           .col-xs-12
-            div(ng-view)
+            div
 
     include scripts
