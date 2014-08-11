@@ -15,5 +15,6 @@ angular.module('app', [
   // 3. /timesheets : timesheets/index.html template and TimesheetCtrl
   // 4. default other routes to /projects
   // 5. the base url for all templates is 'assets/templates/app'
+
 });
   
