@@ -12,18 +12,18 @@ html(class="no-js", ng-app="main")
     - else
       link(href="/assets/css/style.css", rel="stylesheet", type="text/css")
 
-    body(ng-controller="MainCtrl")
-      .tsz-page-container(ng-cloak)
-        .navbar.navbar-default.navbar-static-top
-          .container-fluid
-            .navbar-header
-              a.navbar-brand(href="#")
-                i.fa.fa-clock-o.fa-lg
-                |   Angular Training
+  body(ng-controller="MainCtrl")
+    .tsz-page-container(ng-cloak)
+      .navbar.navbar-default.navbar-static-top
+        .container-fluid
+          .navbar-header
+            a.navbar-brand(href="#")
+              i.fa.fa-clock-o.fa-lg
+              |   Angular Training
 
-        .container
-          .row
-            .col-xs-12
-              div(ng-view)
-            
-    include ../templates/scripts
+      .container
+        .row
+          .col-xs-12
+            div(ng-view)
+
+    include scripts
