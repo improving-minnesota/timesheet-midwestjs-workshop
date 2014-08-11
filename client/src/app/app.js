@@ -8,6 +8,7 @@ angular.module('app', [
 ])
 
 .config(function ($routeProvider) {
+
   $routeProvider.
     when('/projects', {
       templateUrl: 'assets/templates/app/projects/index.html',

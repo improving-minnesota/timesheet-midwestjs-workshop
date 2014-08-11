@@ -16,18 +16,11 @@ module.exports = {
 
   server : {
     dev : {
-      listenPort: 3000,
-      securePort: 8400
-    },
-
-    debug : {
-      listenPort: 3003,
-      securePort: 8403
+      port: 3000
     },
 
     prod : {
-      listenPort: 3033,
-      securePort: 8433
+      port: 3001
     }
   }
 };
