@@ -18,7 +18,7 @@ module.exports = function(config) {
       'src/**/*.js',
 
       // include the angular mocks libraray
-      'assets/js/components/angular-mocks/angular-mocks.js',
+      'assets/js/angular-mocks/angular-mocks.js',
 
       // serve all specs
       'test/unit/**/*.spec.js',
