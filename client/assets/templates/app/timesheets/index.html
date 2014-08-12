@@ -26,8 +26,8 @@
               ng-class="{faded: timesheet.deleted}"
               ng-click="showDetail(timesheet)">
 
-              <td>{{timesheet.beginDate}}</td>
-              <td>{{timesheet.endDate}}</td>
+              <td>{{timesheet.beginDate | date}}</td>
+              <td>{{timesheet.endDate | date}}</td>
               <td>{{timesheet.name}}</td>
               <td>{{timesheet.description}}</td>
               <td>
