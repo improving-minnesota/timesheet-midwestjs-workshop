@@ -6,7 +6,7 @@ angular.module('notifications.services', [])
 
       Messenger.options = {
         extraClasses: 'messenger-fixed messenger-on-top messenger-on-right',
-        theme: 'flat'
+        theme: 'ice'
       };
 
       var notifications = {
