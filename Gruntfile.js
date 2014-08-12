@@ -221,37 +221,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // The **docco** task iterates through the `src` files and creates annotated source reports for them.
-    docco: {
-      options: {
-        layout: 'parallel'
-      },
-      client: {
-        options: {
-          output: 'dist/docs/client/'
-        },
-        src: 'client/src/**/*.js'
-      },
-      app: {
-        options: {
-          output: 'dist/docs/app/'
-        },
-        src: 'app/**/*.js'
-      },
-      grunt: {
-        options: {
-          output: 'dist/docs/docs/grunt/'
-        },
-        src: 'Gruntfile.js'
-      },
-      config: {
-        options: {
-          output: 'dist/docs/config/'
-        },
-        src: 'config/**/*.js'
-      }
-    },
-
     env: {
       development: {
         NODE_ENV: 'development'
