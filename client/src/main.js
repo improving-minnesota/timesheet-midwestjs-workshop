@@ -6,6 +6,8 @@ angular.module('main', [
   'progress.interceptors',
   'security.interceptors',
   'ui.select2',
+  'ui.bootstrap.position',
+  'ui.bootstrap.dateparser',
   'ui.bootstrap.datepicker',
   'ui.bootstrap.pagination',
   'ui.bootstrap.buttons',
