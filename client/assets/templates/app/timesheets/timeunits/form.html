@@ -3,7 +3,7 @@
 <div class="tsz-timeunit-form" ng-cloak>
   <div class="row">
     <div class="col-xs-12">
-      <form class="form-horizontal" name="timeunitForm">
+      <form class="form-horizontal" name="timeunitForm" novalidate>
 
         <div class="form-group">
           <div tsz-field-wrap input-id="timeunit-project" label="Project">
@@ -19,18 +19,19 @@
 
         <div class="form-group">
           <div tsz-field-wrap input-id="timeunit-dateWorked" label="Date">
-            <div class="input-group">
+            <div class="input-group" ng-init="opened = false">
               <input type="text" class="form-control" 
                 datepicker-popup="MM/dd/yyyy"
                 ng-model="timeunit.dateWorked"  
                 show-weeks="false"
                 show-button-bar="false"
-                min="timesheet.beginDate"
-                max="timesheet.endDate"
+                min-date="timesheet.beginDate"
+                max-date="timesheet.endDate"
                 ng-required="true" 
+                is-open="opened"
                 close-text="Close" />
               <span class="input-group-btn">
-                <button class="btn btn-default">
+                <button class="btn btn-default" ng-click="opened = !opened; $event.stopPropagation()">
                   <i class="fa fa-fw fa-calendar"></i>
                 </button>
               </span>

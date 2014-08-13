@@ -8,12 +8,12 @@
     "jquery": "2.1.0",
     "lodash": "2.4.1",
     "moment": "2.7.0",
-    "angular": "1.2.18",
-    "angular-resource": "1.2.18",
-    "angular-sanitize": "1.2.18",
-    "angular-cookies": "1.2.18",
-    "angular-animate": "1.2.18",
-    "angular-route": "1.2.18",
+    "angular": "1.2.20",
+    "angular-resource": "1.2.20",
+    "angular-sanitize": "1.2.20",
+    "angular-cookies": "1.2.20",
+    "angular-animate": "1.2.20",
+    "angular-route": "1.2.20",
     "angular-ui-bootstrap": "0.11.0",
     "angular-ui-router": "0.2.10",
     "angular-ui-select2": "0.0.5",
@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "jasmine": "2.0.0",
-    "angular-mocks": "1.2.18"
+    "angular-mocks": "1.2.20"
   }
 }

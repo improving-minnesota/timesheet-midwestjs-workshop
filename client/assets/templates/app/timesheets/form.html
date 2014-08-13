@@ -3,7 +3,7 @@
 <div class="tsz-timesheet-form" ng-cloak>
   <div class="row">
     <div class="col-xs-12">
-      <form class="form-horizontal" name="timesheetForm">
+      <form class="form-horizontal" name="timesheetForm" novalidate>
 
         <div class="form-group">
           <div tsz-field-wrap input-id="timesheet-name" label="Name">
@@ -23,16 +23,17 @@
 
         <div class="form-group">
           <div tsz-field-wrap input-id="timesheet-beginDate" label="Begin Date">
-            <div class="input-group">
+            <div class="input-group" ng-init="openedA = false">
               <input type="text" class="form-control" 
                 datepicker-popup="MM/dd/yyyy"
                 ng-model="timesheet.beginDate"  
                 show-weeks="false"
                 show-button-bar="false"
                 ng-required="true" 
-                close-text="Close" />
+                close-text="Close"
+                is-open="openedA" />
               <span class="input-group-btn">
-                <button class="btn btn-default">
+                <button class="btn btn-default" ng-click="openedA = !openedA; $event.stopPropagation()">
                   <i class="fa fa-fw fa-calendar"></i>
                 </button>
               </span>
@@ -42,7 +43,7 @@
 
         <div class="form-group">
           <div tsz-field-wrap input-id="timesheet-endDate" label="End Date">
-            <div class="input-group">
+            <div class="input-group" ng-init="openedB = false">
               <input type="text" class="form-control" 
                 datepicker-popup="MM/dd/yyyy"
                 ng-model="timesheet.endDate"  
@@ -50,9 +51,10 @@
                 show-button-bar="false"
                 min="timesheet.beginDate"
                 ng-required="true" 
-                close-text="Close" />
+                close-text="Close"
+                is-open="openedB" />
               <span class="input-group-btn">
-                <button class="btn btn-default">
+                <button class="btn btn-default" ng-click="openedB = !openedB; $event.stopPropagation()">
                   <i class="fa fa-fw fa-calendar"></i>
                 </button>
               </span>
