@@ -22,7 +22,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="employee in pageConfig.data" 
+            <tr ng-repeat="employee in pageConfig.data"
               class="fadeable-row"
               ng-class="{faded: employee.deleted}"
               ng-click="showDetail(employee)">
@@ -50,12 +50,12 @@
 
     <div class="text-center">
       <div pagination
-        total-items="pageConfig.totalItems" 
-        ng-model="pageConfig.page" 
-        items-per-page="pageConfig.limit" 
-        boundary-links="true" 
-        rotate="true" 
-        ng-change="requestEmployees(page)">
+        total-items="pageConfig.totalItems"
+        ng-model="pageConfig.page"
+        items-per-page="pageConfig.limit"
+        boundary-links="true"
+        rotate="true"
+        ng-change="requestEmployees(pageConfig.page)">
       </div>
     </div>
 

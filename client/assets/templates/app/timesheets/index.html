@@ -21,7 +21,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="timesheet in pageConfig.data" 
+            <tr ng-repeat="timesheet in pageConfig.data"
               class="fadeable-row"
               ng-class="{faded: timesheet.deleted}"
               ng-click="showDetail(timesheet)">
@@ -48,16 +48,16 @@
 
     <div class="text-center">
       <div pagination
-        total-items="pageConfig.totalItems" 
-        ng-model="pageConfig.page" 
-        items-per-page="pageConfig.limit" 
-        boundary-links="true" 
-        rotate="true" 
-        ng-change="requestTimesheets(page)">
+        total-items="pageConfig.totalItems"
+        ng-model="pageConfig.page"
+        items-per-page="pageConfig.limit"
+        boundary-links="true"
+        rotate="true"
+        ng-change="requestTimesheets(pageConfig.page)">
       </div>
     </div>
 
   </div>
-  
+
   <div ui-view></div>
 </div>
